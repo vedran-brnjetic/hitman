@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "services",
+  "info": {
+    "name": "service",
+    "description": "The hitman services"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "type": "text"
+    },
+    "cover_photo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "contract_template": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "hitmen": {
+      "collection": "hitman",
+      "via": "services"
+    }
+  }
+}

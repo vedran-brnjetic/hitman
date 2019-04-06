@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/servicerequests",
+      "handler": "Servicerequest.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/servicerequests/count",
+      "handler": "Servicerequest.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/servicerequests/:id",
+      "handler": "Servicerequest.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/servicerequests",
+      "handler": "Servicerequest.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/servicerequests/:id",
+      "handler": "Servicerequest.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/servicerequests/:id",
+      "handler": "Servicerequest.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

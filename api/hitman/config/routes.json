@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hitmen",
+      "handler": "Hitman.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hitmen/count",
+      "handler": "Hitman.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hitmen/:id",
+      "handler": "Hitman.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hitmen",
+      "handler": "Hitman.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hitmen/:id",
+      "handler": "Hitman.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hitmen/:id",
+      "handler": "Hitman.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "servicerequest",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "request_start": {
+      "default": "",
+      "type": "date"
+    },
+    "time_service_needed": {
+      "default": "",
+      "type": "date"
+    },
+    "service": {
+      "model": "service"
+    },
+    "user": {
+      "model": "user",
+      "via": "servicerequests",
+      "plugin": "users-permissions"
+    },
+    "accepted_hitman": {
+      "model": "hitman"
+    },
+    "service_location_coordinates": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}
